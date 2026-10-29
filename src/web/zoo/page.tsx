@@ -95,7 +95,7 @@ function CompareView(props: ViewProps) {
 
 function GalleryView({ histories, preparedOf, settings, open }: ViewProps) {
   return (
-    <div class="grid" style={{ "--min": settings.format === "linkedin-landscape" ? "420px" : "280px" }}>
+    <div class="grid" style={{ "--min": settings.format === "landscape" ? "420px" : "280px" }}>
       {histories.map((history) => (
         <Card
           key={history.id}

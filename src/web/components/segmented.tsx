@@ -42,7 +42,7 @@ export function Segmented<Value extends string>({ label, options, value, onChang
             <>
               {choice.swatch && <Swatch colours={choice.swatch} />}
               {choice.ratio && <RatioIcon ratio={choice.ratio} />}
-              {names?.[choice.id] ?? choice.id.replace("linkedin-", "")}
+              {names?.[choice.id] ?? choice.id}
             </>
           ),
         }))}

@@ -6,12 +6,12 @@ export interface Canvas {
 export const isPortrait = (canvas: Canvas): boolean => canvas.height > canvas.width;
 
 export const FORMATS: Record<string, Canvas> = {
-  "linkedin-portrait": { width: 1080, height: 1350 },
-  "linkedin-square": { width: 1080, height: 1080 },
-  "linkedin-landscape": { width: 1200, height: 627 },
+  portrait: { width: 1080, height: 1350 },
+  square: { width: 1080, height: 1080 },
+  landscape: { width: 1200, height: 627 },
 };
 
-export const DEFAULT_FORMAT = "linkedin-landscape";
+export const DEFAULT_FORMAT = "landscape";
 
 const WIDTH_BY_HEIGHT = /^(\d+)x(\d+)$/i;
 

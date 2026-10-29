@@ -11,11 +11,11 @@ export type Choose = (setting: string, value: string, next: Settings) => void;
 const FORMAT_ICON_PIXELS = 22;
 
 const PALETTE_NAMES: Record<string, string> = { midnight: "Midnight", pcb: "Circuit board", paper: "Paper" };
-const FORMAT_NAMES: Record<string, string> = { "linkedin-portrait": "Portrait", "linkedin-square": "Square", "linkedin-landscape": "Landscape" };
+const FORMAT_NAMES: Record<string, string> = { portrait: "Portrait", square: "Square", landscape: "Landscape" };
 const FORMAT_NOTES: Record<string, string> = {
-  "linkedin-portrait": "Takes the most room in the LinkedIn feed on a phone.",
-  "linkedin-square": "Sits the same in every feed.",
-  "linkedin-landscape": "LinkedIn's link-preview shape; best for long, flat histories.",
+  portrait: "Instagram deserves to know your git activity.",
+  square: "Dependable. Familiar. Square.",
+  landscape: "Link previews and LinkedIn posts.",
 };
 
 function FormatOption({ name, width, height }: { name: string; width: number; height: number }) {
