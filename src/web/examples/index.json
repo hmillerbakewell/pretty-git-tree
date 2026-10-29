@@ -1,0 +1,58 @@
+{
+  "examples": [
+    {
+      "name": "git",
+      "url": "https://github.com/git/git",
+      "description": "Topics merged into several long-lived integration branches.",
+      "range": {
+        "start": "2026-03-02",
+        "end": "2026-03-09"
+      }
+    },
+    {
+      "name": "postgres",
+      "url": "https://github.com/postgres/postgres",
+      "description": "Parallel release lines; fixes are copied across, never merged.",
+      "range": {
+        "start": "2026-02-09",
+        "end": "2026-02-16"
+      }
+    },
+    {
+      "name": "linux",
+      "url": "https://github.com/torvalds/linux",
+      "description": "A merge window: one maintainer merging subsystem trees.",
+      "range": {
+        "start": "2026-02-09",
+        "end": "2026-02-16"
+      }
+    },
+    {
+      "name": "rust",
+      "url": "https://github.com/rust-lang/rust",
+      "description": "A merge queue, with rollups that merge merges. One day of it.",
+      "range": {
+        "start": "2026-03-03",
+        "end": "2026-03-04"
+      }
+    },
+    {
+      "name": "go",
+      "url": "https://github.com/golang/go",
+      "description": "Reviewed outside GitHub: a near-straight line, plus release branches.",
+      "range": {
+        "start": "2026-02-01",
+        "end": "2026-03-01"
+      }
+    },
+    {
+      "name": "curl",
+      "url": "https://github.com/curl/curl",
+      "description": "Rebased and linear: one line, lots of commits.",
+      "range": {
+        "start": "2026-03-16",
+        "end": "2026-03-23"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+:root {
+  --paper: oklch(0.975 0.008 85);
+  --paper-sunk: oklch(0.948 0.011 85);
+  --paper-raised: oklch(0.99 0.005 85);
+  --grid: oklch(0.93 0.013 82);
+  --rule: oklch(0.86 0.013 80);
+  --rule-strong: oklch(0.3 0.012 70);
+  --ink: oklch(0.24 0.012 70);
+  --text-2: oklch(0.43 0.012 70);
+  --text-3: oklch(0.52 0.012 70);
+  --accent: oklch(0.56 0.19 33);
+  --accent-ink: oklch(0.985 0.01 60);
+  --accent-text: oklch(0.5 0.17 33);
+  --scrim: oklch(0.17 0.008 70 / 0.97);
+
+  --font-sans: "Archivo Variable", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Fragment Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --gutter: clamp(16px, 3vw, 40px);
+
+  --z-sticky: 10;
+  --z-overlay: 20;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: oklch(0.205 0.006 70);
+    --paper-sunk: oklch(0.175 0.006 70);
+    --paper-raised: oklch(0.235 0.007 70);
+    --grid: oklch(0.235 0.007 70);
+    --rule: oklch(0.33 0.008 70);
+    --rule-strong: oklch(0.82 0.01 85);
+    --ink: oklch(0.93 0.012 85);
+    --text-2: oklch(0.76 0.01 80);
+    --text-3: oklch(0.66 0.01 80);
+    --accent: oklch(0.7 0.16 38);
+    --accent-ink: oklch(0.2 0.02 40);
+    --accent-text: oklch(0.76 0.14 40);
+    color-scheme: dark;
+  }
+}

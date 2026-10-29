@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>pretty-git-tree</title>
+  <style>
+    .tile { fill: #2b2721; }
+    .gap { stroke: #2b2721; }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #4a443b; }
+      .gap { stroke: #4a443b; }
+    }
+  </style>
+  <rect class="tile" width="32" height="32" rx="6" />
+  <path d="M7 25C14 25 18 7 25 7" stroke="#d9472b" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path class="gap" d="M7 7C14 7 18 25 25 25" stroke-width="8" fill="none" />
+  <path d="M7 7C14 7 18 25 25 25" stroke="#f6f1e7" stroke-width="4" fill="none" stroke-linecap="round" />
+</svg>

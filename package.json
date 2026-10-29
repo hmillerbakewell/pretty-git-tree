@@ -1,0 +1,35 @@
+{
+  "name": "pretty-git-tree",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Turn a slice of git history into a diagram worth looking at.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src tests scripts vite.config.ts && node scripts/no-comments.ts",
+    "format": "biome format --write src tests scripts vite.config.ts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@biomejs/biome": "2.6.4",
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource/fragment-mono": "^5.3.0",
+    "@preact/preset-vite": "^2.10.6",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^26.6.4",
+    "fast-xml-parser": "^5.11.2",
+    "posthog-js": "^1.442.0",
+    "preact": "^11.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}
