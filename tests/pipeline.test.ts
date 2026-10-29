@@ -1,19 +1,7 @@
 import { XMLValidator } from "fast-xml-parser";
 import { describe, expect, test } from "vitest";
-import {
-  DEFAULT_OPTIONS,
-  FORMATS,
-  type Graph,
-  type Layout,
-  layout,
-  renderers,
-  renderGraph,
-  SAMPLES,
-  sampleLog,
-  simplify,
-  sliceLog,
-  THEMES,
-} from "../src/core/index.ts";
+import { DEFAULT_OPTIONS, FORMATS, type Graph, type Layout, layout, renderGraph, SAMPLES, sampleLog, simplify, sliceLog, THEMES } from "../src/core/index.ts";
+import { LAYOUTS } from "../src/web/settings.ts";
 
 const DAY = 86400;
 const FEATURE_LOG_COMMITS_ONE_A_DAY_FROM_2_JANUARY_2026 = 13;
@@ -157,11 +145,11 @@ const RENDER_CHOICES = [
   ["centre", "fill", 4],
 ] as const;
 
-test("every sample renders in every style", () => {
+test("every sample renders in every style the site offers", () => {
   for (const { name } of SAMPLES) {
     for (const graph of [sliceLog(sampleLog(name)), middleThirdOf(name)]) {
       for (const level of ["full", "fused"] as const) {
-        for (const { name: style } of renderers()) {
+        for (const { style } of LAYOUTS) {
           for (const [arrange, route, twistEvery] of RENDER_CHOICES) {
             const svg = renderGraph(graph, { level, style, arrange, route, twistEvery });
             valid(svg);
